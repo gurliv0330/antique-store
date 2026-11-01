@@ -15,3 +15,5 @@ Okay so for the designing, I gave it a bit of a Alladin vibe. so right now, the 
 
 I have offically added all the riddles. YAYAYAYAY!!!!
 
+So I finished working on all the cards. only problem is I messed up the clicking part. I'll fix it soon.
+

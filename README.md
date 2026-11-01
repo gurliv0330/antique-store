@@ -8,3 +8,6 @@ This is basically like a game-ish experience with an antique store with historic
 Alright so I realize I am kind of late again, but this was a particularly busy week due to my pre boards coming soon. So here is what I am going to do now. I will work on the layout of the game/website right now. I will finish that tonight, then the rest of the game tomorrow. The weekend lock in hates to see me coming. 
 
 So I made all the buttons of the shop, and figured out all the times like a hourglass pendant, a map (kind of like the mauraderer's map. Now I'm going to style them. Basically you get 5 digits by solving 5 puzzles. I still have to figure out the end, so wish my luck. 
+
+I finally finished the whole shop. YAYAAYYAYAYYAY
+

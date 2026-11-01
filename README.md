@@ -13,3 +13,5 @@ I finally finished the whole shop. YAYAAYYAYAYYAY
 
 Okay so for the designing, I gave it a bit of a Alladin vibe. so right now, the title is Gilmore Girl's inspired, the items at the store are Harry Potter inspired, and the themes are Alladin inspired. I love adding references if you can't already tell. It was Halloween this weekend, and I'm brown so seeing someone absolutely gorgeous dress up as princess Jasmine inspired the Alladin move, (mostly becuase I want to dress like that too). Cultural representation is important people. 
 
+I have offically added all the riddles. YAYAYAYAY!!!!
+

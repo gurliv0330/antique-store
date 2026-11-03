@@ -19,3 +19,7 @@ I have offically added all the riddles. YAYAYAYAY!!!!
 
 So I finished working on all the cards. only problem is I messed up the clicking part. I'll fix it soon.
 
+A screenshot of this working 
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/a2cd9566-1594-45e1-ac67-fff75ca7f39d" />
+
+

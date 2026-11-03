@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Kim's Antique Store</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English:ital@0;1&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="mystyle.css">
+        
+
+
+    </head>
+    <body>
+        <div class="svg-filter-holder">
+            <svg>
+                <filter id="parchment-grain">
+                    <feTurbulence type="fractaNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+                    <feDiffuseLighting in="noise" lighting-color="#e8d7be" surfaceScale="1.4" result="light">
+                        <feDistantLight azimuth="60" elevation="50"/>
+                    </feDiffuseLighting>
+                    <feBlend mode="multiply" in="SourceGraphic" in2="light" result="blend" />
+
+                </filter>
+            </svg>
+            </div>
+
+            <canvas id="shop-canvas"></canvas>
+            <div class="vignette"></div>
+
+            <header>
+                <h1>KIM'S ANTIQUE STORE</h1>
+                <p class="subtitle">Answer the five riddles to get the secret code</p>
+
+
+            <div class="vault-banner">
+                <div class="vault-banner">The Master Vault Code (5 digits)</div>
+                    <div class="fragments-container">
+                        <div id="slot-1" class="fragment-slot">?</div>
+                        <div id="slot-2" class="fragment-slot">?</div>
+                        <div id="slot-3" class="fragment-slot">?</div>
+                        <div id="slot-4" class="fragment-slot">?</div>
+                        <div id="slot-5" class="fragment-slot">?</div>             
+                    </div>
+
+                    <button id="master-vault-btn" class="master-vault-btn" onclick="openMasterVault()">Unseal Master Vault</button>
+
+
+            </div>
+            </header>
+
+
+            <main>
+               <div class="shop-grid">
+
+
+                <div id="card-hourglass" class="shop-card" onclick="openModal('watch')">
+                    <span class="status-badge" id="badge-watch">LOCKEDDD</span>         
+
+                    <svg class="svg-illustration" viewBox="0 0 100">
+                        <circle cx="50" cy="55" r="32" fill="#140f0b" stroke="#d4af37" stroke-width="2.5"/>
+                        <circle cx="50" cy="55" r="22" fill="none" stroke="#6e553c" stroke-width="1.5" stroke-dasharray="3,3"/>
+                        <rect x="46" y="14" width="8" height="10" fill="#d4af37"/>
+                        <circle cx="50" cy="11" r="5" fill="none" stroke="#d4af37" stroke-width="2"/>
+                        <line x1="50" y1="55" x2="50" y2="30" stroke="#d4af37" stroke-width="2.5"/>
+                        <circle cx="50" cy="55" r="3" fill="#d4af37"/>
+                    </svg>
+                    <h3 class="hourglass-title">Magic Hourglass Pendant</h3>
+                    <p class="hourglass-desc">Solve the riddle to unlock the first digit</p>
+                    <span class="tag">Get Digit #1</span>
+
+                
+                
+                </div>
+
+                <div id="card-map" class="shop-card" onclick="openModal('map')">
+                    <span class="status-badge" id="badge-map">LOCKED</span>         
+
+                    <svg class="svg-illustration" viewBox="0 0 100">
+                        <path d="M 20 20 L 50 12 L 80 20 L 80 80 L 50 88 L 20 80 Z" fill="#241a12" stroke="#d4af37" stroke-width="2"/>
+                        <line x1="50" y1="12" x2="50" y2="88" stroke="#59432d" stroke-width="1.5" stroke-dasharray></line>
+                    </svg>
+                    <h3 class="map-title">Ancient Treasure Map</h3>
+                    <p class="map-desc">Solve the riddle to unlock the second digit</p>
+                    <span class="tag">Get Digit #2</span>
+                </div>
+
+                <div id="card-cloak" class="shop-card" onclick="openModal('cloak')">
+                    <span class="status-badge" id="badge-cloak">LOCKEDDD</span>
+                    <svg class="svg-illustration" viewBox="0 0 100 100">
+                        <path d="M 50 20 Q 30 35 22 78 Q 50 84 78 78 Q 70 35 50 20 Z" fill="#151d26" stroke="#527094" stroke-width="2"/>
+                    </svg>
+                    <h3 class="cloak-title">Invisible Cloak</h3>
+                    <p class="cloak-desc">Solve the riddle to unlock the third digit</p>
+                    <span class="tag">Get Digit #3</span>
+                </div>
+                <div id="card-letter" class="shop-card" onclick="openModal('letter')">
+                    <span class="status-badge" id="badge-letter">LOckeddd</span>
+                    <svg class="svg-illustration" viewBox="0 0 100 100">
+                        <rect x="20" y="25" width="60" height="50" fill="#291e16" stroke="#d4af37" stroke-width="2" rx="2"/>
+                        <path d="M 20 25 L 50 50 L 80 25" fill="none" stroke="#d4af37" stroke-width="1.5"/>
+                        <circle cx="50" cy="50" r="7" fill="#7a1c1c" stroke="#4a1010" stroke-width="1"/>
+
+
+                    </svg> 
+                    <h3 class="letter-title">Alchemist's Mysterious Letter</h3>
+                    <p class="letter-desc">Solve the riddle of the poison driven alchemist</p>
+
+                    <span class="tag">Get Digit #4</span>
+                </div>
+
+                <div id="card-tome" class="shop-card" onclick="openModal('tome')">
+                    <span class="status-badge" id="badge-tome">LOCKEDDDD</span>
+                    <svg class="svg-illustration" viewBox="0 0 100 100">
+                        <rect x="25" y="18" width="55" height="68" fill="#2b1a10" stroke="#d4af37" stroke-width="2" rx="2"/>
+                        <rect x="20" y="18" width="8" height="68" fill="#5e1919" stroke="#d4af37" stroke-width="1"/>
+                        <circle cx="52" cy="52" r="10" fill="#d4af37"/>
+                    </svg>
+                    <h3 class="tome-title">Ancient Tome of Secrets</h3>
+                    <p class="tome-description">Solve the riddle of the ancient realms</p>
+                    <span class="tag">Get Digit #5</span>
+                </div>
+                
+
+
+               </div> 
+            </main>
+
+
+            <div id="modal" class="modal-overlay" onclick="closeModalOnOuter(event)">
+                <div class="parchment">
+                    <button class="close-btn" onclick="closeModal()">X</button>
+                    <h2 id="modal-title">Relic Title</h2>
+                    <div id="modal-origin" class="origin">Provenance</div>
+                    <p id="modal-text">Story text...</p>
+
+                    <div id="puzzle-box" class="puzzle-box"></div>
+                    <div id="revealed-word-box" class="revealed-word-box hidden"></div>
+
+                </div>
+                <footer>
+                    <p>Curated by the Keepers of Antiquities</p>
+                </footer>
+
+            </div>
+
+            <script src="script.js"></script>
+        
+
+
+
+
+
+
+
+    </body>
+</html>
